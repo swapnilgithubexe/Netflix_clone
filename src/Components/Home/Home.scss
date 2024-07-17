@@ -1,0 +1,100 @@
+.banner{
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-evenly;
+  
+  h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-right: 80%;
+    margin-top: 15%;
+    padding-top: 35px;
+  }
+  p{
+    padding: 10px;
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  div{
+    display: flex;
+    margin-right: 80%;
+    button {
+        padding: 1rem;
+        width: 100px;
+        outline: none;
+        border: none;
+        z-index: 10;
+        border-radius: 5px;
+        margin: 1rem;
+        cursor: pointer;
+        
+        color: black;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        transition: all 0.5s;
+    
+        &:hover {
+          opacity: 0.6;;
+        }
+                &:nth-child(odd) {
+                  background-color: white;
+                  color: black;
+                }
+        
+                &:nth-child(even) {
+                  background-color: rgb(180, 179, 179);
+                  color: white;
+                  svg{
+                    fill: white;
+                    font-size: 1rem;
+                  }
+                }
+    
+      }
+    
+      button svg {
+        fill: black;
+      }
+      
+  }
+    
+
+}
+
+
+
+.row{
+  padding: 1rem;
+  background-color: black;
+  h2{
+    font-weight: 300;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+  }
+  div{
+    display: flex;
+    overflow-x: auto;
+    
+    
+  }
+}
+.card{
+width: 130px;
+margin: 0.3rem;
+cursor: pointer;
+transition: transform 0.5s;
+border-radius: 5px;
+
+&:hover{
+  transform: translateY(-10px);
+}
+}
